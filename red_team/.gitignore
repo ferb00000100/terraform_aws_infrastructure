@@ -1,12 +1,16 @@
 # Local .terraform directories
 **/.terraform/*
+*./tools/.terraform/*
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
 
+*./tools/tfstate
+*./tools/tfstate.*
+
 # Crash log files
-crash.log
+*./tools/crash.log
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
@@ -28,11 +32,10 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
-# TernJS port file
-.tern-port
 
-.DS_Store
+**./templates/*
+**./tools/templates/*
+
 .idea
-*.iml
-
+.idea/*
 
